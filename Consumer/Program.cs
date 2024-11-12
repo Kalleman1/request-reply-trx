@@ -47,7 +47,8 @@ namespace Consumer
                     try
                     {
                         // Simulér en fejl i database operationen
-                        if (_random.Next(0, 2) == 0) // 0 or 1, 50% chance
+                        // 50% chance :P
+                        if (_random.Next(0, 2) == 0)
                         {
                             throw new Exception("Simulated processing error");
                         }
